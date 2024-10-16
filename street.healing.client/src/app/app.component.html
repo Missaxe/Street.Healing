@@ -1,31 +1,21 @@
+<head>
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
 <h1 id="tableLabel">Weather forecast</h1>
 
+
 <router-outlet>
-  <button type="button" class="btn btn-primary-outline pull-right" (click)="btnClick();">
-    <i class="fa fa-plus"></i>
-    SignUp
-  </button>
+  <div class="buttons-container">
+    <button type="button" class="btn btn-signup"  (click)="btnSignUpClick();">
+      <!--<i class="fa fa-plus"></i>-->
+      SignUp
+    </button>
+    <button type="button" class="btn btn-login" (click)="btnLoginClick();">
+      <!--<i class="fa fa-plus"></i>-->
+      Login
+    </button>
+  </div>
 </router-outlet>
 
-<!--<p>{{title}}</p>-->
-
-<!--<p *ngIf="!forecasts"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
-
-<table *ngIf="forecasts">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let forecast of forecasts">
-      <td>{{ forecast.date }}</td>
-      <td>{{ forecast.temperatureC }}</td>
-      <td>{{ forecast.temperatureF }}</td>
-      <td>{{ forecast.summary }}</td>
-    </tr>
-  </tbody>
-</table>-->

@@ -24,10 +24,16 @@ export class AppComponent implements OnInit {
     this.getForecasts();
   }
 
-  btnClick() {
+  btnSignUpClick() {
 
     this.router.navigateByUrl('userSignup');
             
+  }
+
+  btnLoginClick() {
+
+    this.router.navigateByUrl('userLogin');
+
   }
 
 

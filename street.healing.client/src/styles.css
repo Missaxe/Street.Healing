@@ -1,8 +1,25 @@
-* {
-  /* background-color: lavenderblush; */
+/** {*/
+/*   background-color: lavenderblush; */
   /*   background-color: pink; */
   /*  background-color: lightpink;*/
-    background-color: aquamarine;
+    /*background-color: lightskyblue !important;*/
   /* background-color: palevioletred; */
   /*background-color: darkseagreen;*/
+/*}*/
+body {
+  background-color: #ffecf2 !important;
+}
+
+.buttons-container {
+  position: absolute;
+  justify-content: space-evenly;
+  display: flex;
+  margin: auto;
+  width: 300px;
+  top: 20px;
+  right: 0px;
+}
+.btn-signup, .btn-login {
+  background-color: lightblue !important;
+  font-weight: bold;
 }
