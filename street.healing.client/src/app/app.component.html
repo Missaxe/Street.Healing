@@ -1,21 +1,13 @@
 <head>
-
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="app.component.css">
 </head>
-
-<h1 id="tableLabel">Weather forecast</h1>
-
-
-<router-outlet>
-  <div class="buttons-container">
-    <button type="button" class="btn btn-signup"  (click)="btnSignUpClick();">
-      <!--<i class="fa fa-plus"></i>-->
+<div class="buttons-container">
+   <button type="button" class="btn btn-signup"  routerLink="/userSignup">
       SignUp
-    </button>
-    <button type="button" class="btn btn-login" (click)="btnLoginClick();">
-      <!--<i class="fa fa-plus"></i>-->
+   </button>
+   <button type="button" class="btn btn-login" routerLink="/userLogin">
       Login
-    </button>
-  </div>
-</router-outlet>
+   </button>
+</div>
+<router-outlet></router-outlet>
 

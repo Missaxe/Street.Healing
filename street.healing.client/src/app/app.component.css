@@ -1,26 +1,16 @@
-/*:host {
-    max-width: 1280px;
-    padding: 2rem;
-    text-align: center;
+/*Css File for styling the APP Component*/
+
+.buttons-container {
+  position: absolute;
+  justify-content: space-evenly;
+  display: flex;
+  margin: auto;
+  width: 300px;
+  top: 20px;
+  right: 0px;
 }
 
-tr:nth-child(even) {
-    background: #ffffff;
+.btn-signup, .btn-login {
+  background-color: #ffecf2 !important;
+  font-weight: bold;
 }
-
-
-tr:nth-child(odd) {
-    background: #FFF;
-}
-
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-table {
-    margin: 0 auto;
-    background-color:blue;
-}
-
-*/
