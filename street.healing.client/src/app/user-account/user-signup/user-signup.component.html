@@ -1,1 +1,27 @@
-<p>user-signup works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="user-signup.component.css">
+</head>
+<body>
+  <h1>Sign Up</h1>
+  <form action="submit-form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmpassword">Confirm Password:</label>
+    <input type="password" id="confirmpassword" name="confirmpassword" required>
+
+    <button type="submit">Sign Up</button>
+    <p><a href="/userLogin">Already have an account ? LogIn</a></p>
+  </form>
+</body>
+</html>

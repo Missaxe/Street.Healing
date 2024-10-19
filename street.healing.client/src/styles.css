@@ -1,8 +1,6 @@
-* {
-  /* background-color: lavenderblush; */
-  /*   background-color: pink; */
-  /*  background-color: lightpink;*/
-    background-color: aquamarine;
-  /* background-color: palevioletred; */
-  /*background-color: darkseagreen;*/
+/*Css File for the general styles of the whole app*/
+body {
+  background-color: lightblue !important;
 }
+
+

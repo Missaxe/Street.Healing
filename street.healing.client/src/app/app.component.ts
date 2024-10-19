@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 interface WeatherForecast {
   date: string;
@@ -13,16 +15,15 @@ interface WeatherForecast {
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router, public zone: NgZone) {}
 
   ngOnInit() {
     this.getForecasts();
   }
-
-
   getForecasts() {
     this.http.get<WeatherForecast[]>('weatherforecast').subscribe(
       (result) => {
